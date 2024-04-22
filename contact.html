@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-US-Learning Classes</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: lightgrey;
+            color:orangered;
+            font-family: 'Times New Roman', Times, serif;   
+           } 
+        .container {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 20px;
+            background-color:lightgrey;
+            color:brown;
+            text-align:right;
+        }
+        nav {
+            display:flex;
+            gap:20px;
+            align-items: right;
+            margin-top: 20px;
+        }
+        h2{
+            margin: 10px;
+            color: brown;
+        }
+        .contact-form{
+            margin: 20px;
+            color:brown;
+            text-align:left;
+        }
+        textarea {
+            width: 30%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        p{
+            color:darkmagenta;
+            margin:20px;
+        }
+        li{
+            color:blue
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+      <nav>
+        <a href="website_Project.html">Back</a>
+    </nav>
+    </div>
+    <h2>Get In Touch</h2>
+    <p>We'd love to hear from you! Feel free to reach out to us with any questions, feedback, or inquiries you may have.</p>
+    <p>You can contact us via:</p>
+    <ul>
+        <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+        <li>Phone: +1 (123) 456-7890</li>
+    </ul>
+    <div class="contact-form">
+        <h2>Send Us a Message</h2><br>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit" style="background-color: lightblue;">Send</button>
+        </form>
+    </div> 
+</body>
+</html>

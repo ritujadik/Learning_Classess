@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Classes</title>
+      <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: lightgrey;
+            color:black;
+            font-family: 'Times New Roman', Times, serif;   
+           } 
+        .container {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 20px;
+            background-color:lightgrey;
+        }
+        nav {
+            display:flex;
+            gap:20px;
+            align-items: center;
+        }
+        nav a {
+            text-decoration: none;
+            color:blue;
+            font-weight: bold;
+        }
+        .required::after {
+            content:"*";
+            color:red;
+        }
+        h3 {
+            text-align: center;
+            margin: 5px
+        }
+        h4 {
+            color:red;
+            margin:5px;
+        }
+        main {
+            padding:px;
+            margin: 5px;
+        }
+        h1 {
+            margin:10px 0;
+        }
+    </style>
+    <script>
+        function showNoteInput(){
+            var selectBox = document.getElementById("options");
+            var noteInput = document.getElementById("noteInput");
+
+            if (selectBox.value === "Other"){
+                noteInput.style.display = "block";
+            } else {
+                noteInput.style.display = "none";
+            }
+        } 
+    </script>
+</head>
+<body>
+    <h1>Learning Classes</h1>
+    <div class="container">
+       <nav>
+            <a href="about.html">About Us</a>
+            <a href="course.html">Courses</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </div>
+    <h4><strong>Welcome to the Learning Classes!!!!!!!!!!!</strong></h4>
+    <main>
+     <h2>Introduction</h2>
+     <p>Welcome to the world of learning classes! Whether you're a seasoned educator, a budding instructor, or simply someone passionate about sharing knowledge, understanding how to create effective and engaging learning experiences is essential.
+    <br><br>In this comprehensive guide, we'll delve into the fundamentals of learning classes, exploring everything from the basics of instructional design to advanced techniques for maximizing learner engagement and retention.<br><br></p>
+    </main>
+    <h3 style="text-align:left;">Student Login</h3><br>
+    <label for ="email_id" class ="required" style="margin: 5px;"><b>Email ID</b></label>
+    <input type ="email" id ="email_id" name="email_id" required><br><br>
+    <label for ="Password" class="required" style="margin: 5px;"><b>Password</b></label>
+    <input type = "password" id ="Password" name="Password" required><br><br>
+    <button>Submit</button><br><br>
+    <h4>If you are note enrolled!!Please fill the Registration through <a href="registration.html">Click Me</a></h4>
+</body>
+</html>
